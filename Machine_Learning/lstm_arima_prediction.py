@@ -10,7 +10,7 @@ from tensorflow.keras.models import Sequential
 from pandas.plotting import lag_plot
 from tensorflow.keras.layers import Dense, LSTM
 from pandas_datareader import DataReader
-from statsmodels.tsa.arima_model import ARIMA
+from statsmodels.tsa.arima.model import ARIMA
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
 

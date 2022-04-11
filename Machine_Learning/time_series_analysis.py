@@ -18,6 +18,7 @@ from pandas_datareader import DataReader
 import datetime  
 
 ticker = "AAPL"
+
 start_date = datetime.datetime.now() - datetime.timedelta(days=3650)
 end_date = datetime.date.today()
 
@@ -47,6 +48,7 @@ def test_stationarity(timeseries):
     rolmean = timeseries.rolling(12).mean()
     rolstd = timeseries.rolling(12).std()
     
+    0
     #Plot rolling statistics:
     plt.plot(timeseries, color='blue',label='Original')
     plt.plot(rolmean, color='red', label='Rolling Mean')
